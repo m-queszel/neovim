@@ -1,10 +1,10 @@
-#  Installation 
+# Installation
 
 1. Clone this repository:
    ```sh
    git clone git@github.com:m-queszel/neovim.git ~/.config/nvim
    ```
-2. Launch Neovim!
+2. Launch Neovim
    - `lazy.nvim` will bootstrap itself and install all the plugins.
 
 ---
