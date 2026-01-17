@@ -9,7 +9,6 @@ vim.opt.smarttab = true
 
 vim.opt.number = true
 vim.opt.relativenumber = true
-vim.opt.cursorline = true
 vim.opt.signcolumn = "yes:1"
 vim.opt.scrolloff = 8
 vim.opt.showcmd = true
@@ -19,6 +18,7 @@ vim.opt.backup = false
 vim.opt.undodir = os.getenv("HOME") .. "/.config/nvim/undodir"
 vim.opt.undofile = true
 vim.opt.clipboard = "unnamedplus"
+vim.opt.guicursor = "n-v-c:block,i:ver25"
 
 vim.opt.hlsearch = true
 vim.opt.incsearch = true

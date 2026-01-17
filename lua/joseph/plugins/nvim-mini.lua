@@ -3,8 +3,6 @@ return {
   version = '*',
   config = function()
     local gen_loader = require('mini.snippets').gen_loader
-
-    require('mini.files').setup {}
     require('mini.icons').setup {}
     require('mini.snippets').setup({
       snippets = {
@@ -14,5 +12,17 @@ return {
       },
     })
     require('mini.pairs').setup {}
+    require('mini.completion').setup {}
+    require('mini.comment').setup {}
+    require('mini.splitjoin').setup {}
+    require('mini.surround').setup {}
+    require('mini.ai').setup {}
+    require('mini.indentscope').setup {}
+    require('mini.tabline').setup {}
+    require('mini.files').setup {}
+    require('mini.cursorword').setup {}
+    require('mini.notify').setup {}
+    require('mini.statusline').setup {}
   end,
 }
+-- "Two words"

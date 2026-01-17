@@ -18,7 +18,8 @@ return {
       "php",
       "vim",
       "vimdoc",
-      "query" },
+      "query"
+    },
   },
   config = function(_, opts)
     require("nvim-treesitter.config").setup(opts)

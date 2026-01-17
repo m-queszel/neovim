@@ -1,12 +1,13 @@
--- lua/plugins/rose-pine.lua
 return {
-  "rose-pine/neovim",
-  name = "rose-pine",
-  lazy=false,
-  priority=1000,
-  config = function()
-    vim.cmd("colorscheme rose-pine")
-  end,
+  {
+    "scottmckendry/cyberdream.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("cyberdream").setup({
+        transparent = true,
+      })
+      vim.cmd("colorscheme cyberdream")
+    end
+  }
 }
-
-

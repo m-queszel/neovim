@@ -49,11 +49,33 @@ The leader key is set to `Space`.
 
 | Mode | Keybind | Description |
 | :--- | :--- | :--- |
+| **Normal** | `<leader>ff` | Telescope find files |
+| **Normal** | `<leader>fg` | Telescope live grep |
+| **Normal** | `<leader>fb` | Telescope buffers |
+| **Normal** | `<leader>fh` | Telescope help tags |
 | **Normal** | `<leader>s` | Global search and replace all word instances under the cursor |
 | **Normal** | `<leader>fe` | Open file explorer (`q` to close the file explorer) |
+| **Normal** | `<leader>bn` | Next buffer |
+| **Normal** | `<leader>bp` | Previous buffer |
+| **Normal** | `<leader>bd` | Delete current buffer |
 | **Visual** | `J` | Move selected block down (auto-extends file if at bottom) |
 | **Visual** | `K` | Move selected block up |
 | **Visual** | `y` | Yank (copy) text with a brief highlight |
+| **Visual** | `gc` | Commenting |
+| **Visual** | `gS` | Toggle on SplitJoin (`.` to use splitjoin after it's toggled on) |
+| **Insert** | `<C-n>` | Move down in completion menu |
+| **Insert** | `<C-p>` | Move up in completion menu |
+| **Insert** | `<C-y>` | Accept completion |
+| **Insert** | `<C-e>` | Cancel snippet insert |
+| **Normal** | `sa` | Add surrounding |
+| **Normal** | `sd` | Delete surrounding |
+| **Normal** | `sr` | Replace surrounding |
+| **Operator** | `va` | Select **a**round the next text object (e.g., `va"` selects the entire string, including quotes) |
+| **Operator** | `vi` | Select **i**nside the next text object (e.g., `vi"` selects the text within the quotes) |
+| **Operator** | `van` | Select **a**round the **n**ext text object (e.g., `vanf` selects the next function) |
+| **Operator** | `vin` | Select **i**nside the **n**ext text object (e.g., `vinf` selects the body of the next function) |
+| **Operator** | `val` | Select **a**round the **l**ast text object (e.g., `valf` selects the previous function) |
+| **Operator** | `vil` | Select **i**nside the **l**ast text object (e.g., `vilf` selects the body of the previous function) |
 
 ## Adding a Language Server
 
