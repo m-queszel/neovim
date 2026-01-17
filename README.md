@@ -30,12 +30,16 @@
 │       ├── lazy.lua
 │       ├── lsp.lua
 │       └── plugins
+│           ├── autotag.lua
 │           ├── colorscheme.lua
 │           ├── lsp
 │           │   ├── lsp.lua
 │           │   └── mason.lua
+│           ├── nvim-mini.lua
 │           └── treesitter.lua
 ├── README.md
+├── snippets
+│   └── global.json
 └── undodir
 ```
 
@@ -46,6 +50,7 @@ The leader key is set to `Space`.
 | Mode | Keybind | Description |
 | :--- | :--- | :--- |
 | **Normal** | `<leader>s` | Global search and replace all word instances under the cursor |
+| **Normal** | `<leader>fe` | Open file explorer (`q` to close the file explorer) |
 | **Visual** | `J` | Move selected block down (auto-extends file if at bottom) |
 | **Visual** | `K` | Move selected block up |
 | **Visual** | `y` | Yank (copy) text with a brief highlight |

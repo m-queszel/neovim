@@ -6,7 +6,6 @@ vim.opt.expandtab = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
 vim.opt.smarttab = true
-vim.opt.list = true
 
 vim.opt.number = true
 vim.opt.relativenumber = true
@@ -32,3 +31,10 @@ vim.opt.showmode = false
 
 -- No automatic comment insertion
 vim.cmd([[autocmd FileType * set formatoptions-=ro]])
+
+--Disable vim default file explorer so we can use nvim-tree
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+--
+
+vim.opt.termguicolors = true
