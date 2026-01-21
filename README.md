@@ -15,31 +15,42 @@
 ```text
 .
 ├── after
-│   └── lsp
-│       └── lua_ls.lua
+│   ├── lsp
+│   │   └── lua_ls.lua
+│   └── queries
+│       └── blade
+│           ├── highlights.scm
+│           └── injections.scm
 ├── GEMINI.md
 ├── init.lua
 ├── lazy-lock.json
 ├── lua
 │   └── joseph
 │       ├── core
+│       │   ├── customBinds
+│       │   │   └── smart_splits.lua
 │       │   ├── defaults.lua
-│       │   ├── keybinds.lua
-│       │   └── treesitter.lua
+│       │   ├── diagnostics.lua
+│       │   └── keybinds.lua
 │       ├── core.lua
 │       ├── lazy.lua
 │       ├── lsp.lua
 │       └── plugins
 │           ├── autotag.lua
 │           ├── colorscheme.lua
+│           ├── dashboard.lua
 │           ├── lsp
 │           │   ├── lsp.lua
 │           │   └── mason.lua
+│           ├── none-ls.lua
+│           ├── nvim-cmp.lua
 │           ├── nvim-mini.lua
+│           ├── nvim-tree.lua
+│           ├── telescope.lua
+│           ├── toggleterm.lua
 │           └── treesitter.lua
 ├── README.md
-├── snippets
-│   └── global.json
+├── tags
 └── undodir
 ```
 
@@ -55,9 +66,15 @@ The leader key is set to `Space`.
 | **Normal** | `<leader>fh` | Telescope help tags |
 | **Normal** | `<leader>s` | Global search and replace all word instances under the cursor |
 | **Normal** | `<leader>fe` | Open file explorer (`q` to close the file explorer) |
+| **Normal** | `<leader>fE` | Toggle file explorer |
 | **Normal** | `<leader>bn` | Next buffer |
 | **Normal** | `<leader>bp` | Previous buffer |
 | **Normal** | `<leader>bd` | Delete current buffer |
+| **Normal** | `<leader>ca` | See available code actions |
+| **Normal** | `gD` | See definition of symbol |
+| **Normal** | `K` | Show documentation for what is under cursor |
+| **Normal** | `<leader>rn` | Rename symbol |
+| **Normal** | `<C-/>` | Toggle terminal |
 | **Visual** | `J` | Move selected block down (auto-extends file if at bottom) |
 | **Visual** | `K` | Move selected block up |
 | **Visual** | `y` | Yank (copy) text with a brief highlight |
@@ -67,6 +84,7 @@ The leader key is set to `Space`.
 | **Insert** | `<C-p>` | Move up in completion menu |
 | **Insert** | `<C-y>` | Accept completion |
 | **Insert** | `<C-e>` | Cancel snippet insert |
+| **Terminal** | `<C-/>` | Toggle terminal |
 | **Normal** | `sa` | Add surrounding |
 | **Normal** | `sd` | Delete surrounding |
 | **Normal** | `sr` | Replace surrounding |

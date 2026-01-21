@@ -1,3 +1,3 @@
 require("joseph.core.defaults")
 require("joseph.core.keybinds")
-require("joseph.core.treesitter")
+require("joseph.core.diagnostics")

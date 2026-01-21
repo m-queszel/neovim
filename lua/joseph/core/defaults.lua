@@ -28,6 +28,8 @@ vim.opt.smartcase =true
 vim.opt.termguicolors = true
 
 vim.opt.showmode = false
+-- Typewriter scrolling
+vim.opt.scrolloff = 999
 
 -- No automatic comment insertion
 vim.cmd([[autocmd FileType * set formatoptions-=ro]])

@@ -10,6 +10,7 @@ end, { expr = true, silent = true })
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { silent = true })
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>fe", ":lua MiniFiles.open()<CR>")
+vim.keymap.set("n", "<leader>fE", ":NvimTreeToggle<CR>", { desc = "Toggle NvimTree" })
 
 vim.keymap.set("n", "<leader>bn", ":bnext<CR>", { desc = "Next buffer" })
 vim.keymap.set("n", "<leader>bp", ":bprevious<CR>", { desc = "Previous buffer" })
@@ -35,3 +36,6 @@ vim.keymap.set('t', '<C-h>', function() smart_splits.smart_split('h') end, { des
 vim.keymap.set('t', '<C-j>', '<cmd>wincmd j<CR>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('t', '<C-k>', '<cmd>wincmd k<CR>', { desc = 'Move focus to the upper window' })
 vim.keymap.set('t', '<C-l>', function() smart_splits.smart_split('l') end, { desc = 'Move focus to the right window or split' })
+
+vim.keymap.set('n', '<C-/>', ':ToggleTerm<CR>', { desc = 'Toggle terminal' })
+vim.keymap.set('t', '<C-/>', '<cmd>ToggleTerm<CR>', { desc = 'Toggle terminal' })
